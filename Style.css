@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #111;
     color: #eeeeee;
     text-align: center;
     margin: 0;
@@ -19,21 +19,17 @@ main {
 }
 
 .movie {
-    background-color: #2b2b2b;
-    padding: 15px;
-    border-radius: 10px;
-    width: 200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px; /* Aumenta o tamanho da imagem */
+    transition: transform 0.3s ease;
 }
 
 .movie:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(80, 80, 80, 0.3);
 }
 
 .movie img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 button {
@@ -55,12 +51,11 @@ button:hover {
 footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: #020202;
+    background-color: #111;
     font-size: 0.8em;
     border-top: 2px solid #444;
 }
 
-/* Estilização do Cabeçalho */
 header {
     background-color: #111;
     color: #d1d1d1;
@@ -68,18 +63,15 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(56, 56, 56, 0.1);
 }
 
-/* Estilização do menu de navegação */
 nav.menu {
-    background: rgba(17, 17, 17, 0.9);
+    background: rgba(37, 37, 37, 0.9);
     padding: 10px 0;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 nav.menu ul {
@@ -109,7 +101,6 @@ nav.menu ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Container de filmes */
 .filme-container {
     display: flex;
     align-items: flex-start;
@@ -118,11 +109,11 @@ nav.menu ul li a:hover {
     padding: 30px;
     max-width: 900px;
     margin: auto;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)); /* Gradiente entre o trailer e a tela */
 }
 
-/* Poster de filmes */
 .filme-poster img {
-    width: 300px;
+    width: 400px; /* Aumenta o tamanho da imagem */
     border-radius: 10px;
     box-shadow: 4px 4px 15px rgba(95, 95, 95, 0.5);
     transition: transform 0.3s ease;
@@ -132,7 +123,6 @@ nav.menu ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Informações do filme */
 .filme-info {
     max-width: 500px;
 }
@@ -153,7 +143,6 @@ nav.menu ul li a:hover {
     margin: 5px 0;
 }
 
-/* Botão de assistir */
 .btn-play {
     display: inline-block;
     background-color: #0061e0;
@@ -171,7 +160,6 @@ nav.menu ul li a:hover {
     transform: scale(1.1);
 }
 
-/* Estilização das temporadas */
 .temporadas h3 {
     margin-top: 20px;
     font-size: 18px;
@@ -197,3 +185,4 @@ nav.menu ul li a:hover {
     text-decoration: underline;
     color: #ffaa00;
 }
+
