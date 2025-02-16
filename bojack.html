@@ -1,41 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoJack Horseman - Netflix Clone</title>
-    <link rel="stylesheet" href="Style.css">
+    <title>Last Chance U - Basquete</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .info {
+            margin-top: 10px;
+        }
+        .tag {
+            background: rgb(204, 39, 39);
+            color: black;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .episode {
+            margin-top: 20px;
+            padding: 10px;
+            background: #222;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .season-selector {
+            margin-top: 20px;
+        }
+        .season-selector select {
+            padding: 5px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+        }
+        .trailer {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .trailer iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="banner">
-            <img src="imagens/degradebojack.jpg" alt="BoJack Horseman" width="950" height="500"
-             class="overlay">
-                <h1>BOJACK CAVALO</h1>
-              
-            </div>
+        <div class="header">
+            <a href="index.html">
+            <img src="imagens/logorebrannd.jpg" alt="Netflix">
+            </a>
+            <div class="title">BOJACK CAVALO</div>
         </div>
-        <div class="filme-info">
-            
-            <p class="sinopse">
-               Os desfios de sanidade mental de um mero cavalo chamado "bojack cavalo", que luta contra o vazio existencial
-            </p>
-            <p><strong>Gênero:</strong> Animação, Comédia</p>
-            
-            <p><strong>Classificação:</strong> Nenhum tipo de espectador</p>
-            
-           
-            
-
+        <div class="info">
+            <span class="tag">16</span> Linguagem imprópria, temas sensíveis
         </div>
-    </section>
-    <div class="episodio-container">
-        <h2>Episódios</h2>
+        <div class="description">
+            BoJack Cavalo segue a vida de um cavalo antropomórfico que foi uma estrela de TV nos anos 90 e agora lida com a decadência, vícios e crises existenciais. Cercado por amigos disfuncionais...
+        </div>
+        <div class="season-selector">
+            <label for="season">Temporada:</label>
+            <select id="season">
+                <option value="1">Temporada 1</option>
+                <option value="2">Temporada 2 <a href="bojack2.html"></a></option>
+            </select>
+        </div>
+        <div class="trailer">
+            <h3></h3>
+            <iframe src="https://www.youtube.com/embed/LFz_RbJbchI" title="BoJack Horsemask Intro Parody"></iframe>
+        </div>
+        <div class="episode">
+            <h3>T1:E1 História de BoJack Cavalo</h3>
+            <p>BoJack contarta uma escritora fantasma para ajuda-lo a escrever a sua autobiografia.</p>
+        </div>
+        <a href="https://www.youtube.com/embed/VtUWD7g4Qlg"  class="button">Assistir</a>
     
-       
-        <div class="temporadas-menu">
-            <button class="tab-btn active" data-tab="t1">Temporada 1</button>
-            <button class="tab-btn" data-tab="t2">Temporada 2</button>
-            <button class="tab-btn" data-tab="t3">Temporada 3</button>
+        <div class="episode">
+            <h3>T1:E2 A filha pródiga</h3>
+            <p>BoJack contarta uma escritora fantasma para ajuda-lo a escrever a sua autobiografia..</p>
         </div>
+        
+        <a href="https://www.youtube.com/embed/XHWt9v_7YfQ" class="button">Assistir</a>
+    
+        <div class="episode">
+            <h3>T1:E3 Entra Zoa e Zelda </h3>
+            <p>BoJack contarta uma escritora fantasma para ajuda-lo a escrever a sua autobiografia.</p>
+        </div>
+        <a href="#" class="button">Assistir</a>
+    
+    </div>
+</body>
+</html>
       
