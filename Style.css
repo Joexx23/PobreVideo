@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #eeeeee;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.movies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background-color: #2b2b2b;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(80, 80, 80, 0.3);
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007cb6;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0058cc;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #020202;
+    font-size: 0.8em;
+    border-top: 2px solid #444;
+}
+
+/* Estilização do Cabeçalho */
+header {
+    background-color: #111;
+    color: #d1d1d1;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(56, 56, 56, 0.1);
+}
+
+/* Estilização do menu de navegação */
+nav.menu {
+    background: rgba(17, 17, 17, 0.9);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+nav.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu ul li {
+    margin-right: 20px;
+}
+
+nav.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav.menu ul li a:hover {
+    background: #444;
+    transform: scale(1.1);
+}
+
+/* Container de filmes */
+.filme-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Poster de filmes */
+.filme-poster img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(95, 95, 95, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.filme-poster img:hover {
+    transform: scale(1.1);
+}
+
+/* Informações do filme */
+.filme-info {
+    max-width: 500px;
+}
+
+.filme-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sinopse {
+    font-size: 16px;
+    color: #ebebeb;
+    margin-bottom: 15px;
+}
+
+.filme-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Botão de assistir */
+.btn-play {
+    display: inline-block;
+    background-color: #0061e0;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-play:hover {
+    background-color: #004bb5;
+    transform: scale(1.1);
+}
+
+/* Estilização das temporadas */
+.temporadas h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.temporadas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.temporadas ul li {
+    margin: 5px 0;
+}
+
+.temporadas ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.temporadas ul li a:hover {
+    text-decoration: underline;
+    color: #ffaa00;
+}
